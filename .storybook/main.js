@@ -12,12 +12,12 @@ module.exports = {
   },
   webpackFinal: config => {
     // This fixes the problem, but not sure if it should be default in the config
-    config.module.rules.unshift({
-      test: /\.m?js/,
-      resolve: {
-        fullySpecified: false,
-      },
-    });
+    // config.module.rules.unshift({
+    //   test: /\.m?js/,
+    //   resolve: {
+    //     fullySpecified: false,
+    //   },
+    // });
     return config;
   }
 }
